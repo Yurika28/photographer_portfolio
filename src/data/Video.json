@@ -1,0 +1,64 @@
+{
+    "videos": [
+      {
+        "id": 1,
+        "title": "Ocean Waves Crashing",
+        "description": "Calming ocean waves at sunset",
+        "url": "https://www.pexels.com/video/ocean-waves-crashing-on-the-shore-1437398/",
+        "duration": 15,
+        "thumbnail": "https://images.pexels.com/videos/1437398/ocean-waves-crashing-on-the-shore-1437398.jpeg",
+        "video_file": "https://player.vimeo.com/external/1437398.hd.mp4?s=abcd1234",
+        "width": 1920,
+        "height": 1080,
+        "tags": ["ocean", "waves", "nature", "sunset"]
+      },
+      {
+        "id": 2,
+        "title": "City Time Lapse",
+        "description": "Time lapse of busy city at night",
+        "url": "https://www.pexels.com/video/time-lapse-video-of-vehicles-in-the-city-3060159/",
+        "duration": 12,
+        "thumbnail": "https://images.pexels.com/videos/3060159/time-lapse-video-of-vehicles-in-the-city-3060159.jpeg",
+        "video_file": "https://player.vimeo.com/external/3060159.hd.mp4?s=efgh5678",
+        "width": 1920,
+        "height": 1080,
+        "tags": ["city", "time lapse", "night", "traffic"]
+      },
+      {
+        "id": 3,
+        "title": "Coffee Preparation",
+        "description": "Close-up of barista making coffee",
+        "url": "https://www.pexels.com/video/close-up-view-of-a-person-pouring-coffee-3209820/",
+        "duration": 18,
+        "thumbnail": "https://images.pexels.com/videos/3209820/close-up-view-of-a-person-pouring-coffee-3209820.jpeg",
+        "video_file": "https://player.vimeo.com/external/3209820.hd.mp4?s=ijkl9012",
+        "width": 1920,
+        "height": 1080,
+        "tags": ["coffee", "barista", "food", "close-up"]
+      },
+      {
+        "id": 4,
+        "title": "Mountain Drone View",
+        "description": "Aerial view of snow-capped mountains",
+        "url": "https://www.pexels.com/video/aerial-view-of-snow-capped-mountains-3296548/",
+        "duration": 22,
+        "thumbnail": "https://images.pexels.com/videos/3296548/aerial-view-of-snow-capped-mountains-3296548.jpeg",
+        "video_file": "https://player.vimeo.com/external/3296548.hd.mp4?s=mnop3456",
+        "width": 1920,
+        "height": 1080,
+        "tags": ["mountain", "drone", "aerial", "snow"]
+      },
+      {
+        "id": 5,
+        "title": "Yoga on Beach",
+        "description": "Woman doing yoga at sunrise",
+        "url": "https://www.pexels.com/video/woman-doing-yoga-on-the-beach-3345882/",
+        "duration": 20,
+        "thumbnail": "https://images.pexels.com/videos/3345882/woman-doing-yoga-on-the-beach-3345882.jpeg",
+        "video_file": "https://player.vimeo.com/external/3345882.hd.mp4?s=qrst7890",
+        "width": 1920,
+        "height": 1080,
+        "tags": ["yoga", "beach", "sunrise", "fitness"]
+      }
+    ]
+}

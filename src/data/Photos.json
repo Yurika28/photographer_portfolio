@@ -1,0 +1,23 @@
+[
+    {
+      "id": "1",
+      "title": "Golden Hour at the Beach",
+      "url": "/images/beach.jpg",
+      "mood": "Warm",
+      "color": "Orange",
+      "event": "Vacation",
+      "place": "Bali"
+    },
+    {
+      "id": "2",
+      "title": "Cityscape",
+      "url": "/images/city.jpg",
+      "mood": "Moody",
+      "color": "Cool",
+      "event": "Street",
+      "place": "Tokyo"
+    }
+]
+
+
+  

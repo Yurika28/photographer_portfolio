@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+
+/* globals.css */
+
+/* Entrance animation for the first H1 */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-25%) scaleY(1.25);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scaleY(1.25);
+    opacity: 1;
+  }
+}
+
+/* Entrance animation for the second H1 */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(25%) scaleY(1.25);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scaleY(1.25);
+    opacity: 1;
+  }
+}
+
+.h1-slide-left,
+.h1-slide-right {
+  transition: color 0.4s ease, text-shadow 0.4s ease, opacity 0.4s ease;
+}
+
+
+.h1-slide-left {
+  animation: slideInLeft 1.2s ease-out forwards;
+}
+
+.h1-slide-right {
+  animation: slideInRight 1.2s ease-out forwards;
+}
+
+/* Scroll-based styling */
+header.scrolled .h1-slide-left{
+  color: white;
+  text-shadow: 1px 1px 0 #737373,
+               -1px -1px 0 #737373,
+               1px -1px 0 #737373,
+               -1px 1px 0 #737373;
+}
+header.scrolled .h1-slide-right {
+  color: #737373; /* neutral gray */
+  text-shadow: none;
+}
+
+header .h1-slide-right {
+  color: white;
+  text-shadow: 1px 1px 0 #737373,
+               -1px -1px 0 #737373,
+               1px -1px 0 #737373,
+               -1px 1px 0 #737373;
+}
+
+.scroll-translate-img.translate-active {
+  transform: translateX(-80px);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ms-madi {
+  font-family: "Ms Madi", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
