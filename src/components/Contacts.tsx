@@ -26,6 +26,8 @@ export default function Contacts() {
             <Image
               src="/images/profile-2.jpeg"
               alt="profile"
+              width={128}
+              height={128}
               className="h-16 w-16 rounded-full object-cover sm:h-20 sm:w-20 md:h-27 md:w-27"
             />
           </div>

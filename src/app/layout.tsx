@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Ms_Madi } from "next/font/google"; // 1. Added Ms_Madi here
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,13 +10,6 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
-
-// 2. Initialize Ms Madi
-const msMadi = Ms_Madi({
-  weight: "400", // Ms Madi only supports weight 400
-  subsets: ["latin"],
-  variable: "--font-ms-madi", // Optional: allows you to use it in CSS via var(--font-ms-madi)
 });
 
 export const metadata: Metadata = {
@@ -30,13 +23,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${msMadi.className} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </html>
+    
+    
   );
 }

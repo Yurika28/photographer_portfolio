@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-
+/* Import Google Fonts in your HTML file, not in CSS */
 /* globals.css */
 
 /* Entrance animation for the first H1 */
@@ -98,6 +98,5 @@ body {
 
 .ms-madi {
   font-family: "Ms Madi", cursive;
-  font-weight: 400;
   font-style: normal;
 }

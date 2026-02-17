@@ -193,7 +193,7 @@ export default async function PhotoList() {
   // Final shuffle for more randomness
   allPhotos = allPhotos.sort(() => Math.random() - 0.5);
 
-  // Show debug info in development
+  
   if (process.env.NODE_ENV === 'development') {
     console.log('Fetch summary:', {
       totalPhotos: allPhotos.length,
