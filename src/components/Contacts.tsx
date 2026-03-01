@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Contacts() {
     return (
-      <section className="relative w-full min-h-1/2 bg-neutral-200 font-sans text-black mt-2 p-2 md:p-4 flex flex-col justify-between">
+      <section className="relative w-full min-h-1/2 font-sans text-black mt-2 p-2 md:p-4 flex flex-col justify-between overflow-hidden">
         <div className="flex justify-between items-center p-2 md:p-4">
             <h2 className="text-lg md:text-2xl font-bold">CONTACT ME</h2>
             <p className=" text-xs md:text-sm italic">SHALL WE CAPTURE<br />YOUR LIFE TOGETHER?</p>
@@ -45,7 +45,7 @@ export default function Contacts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="z-10 cursor-pointer hover:underline">
+                  <span className="text-sm md:text-base z-10 cursor-pointer hover:underline">
                     BOOK A DATE
                   </span>
                 </a>

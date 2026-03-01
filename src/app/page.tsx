@@ -52,7 +52,7 @@ export default async function Home() {
 
       
 
-      <footer id="contacts" className="bg-neutral-200">
+      <footer id="contacts" className="w-full bg-neutral-200" >
         <Image src="/images/torn-paper-divider-lower.png" alt="page divider" width={1200} height={80} className="w-full h-auto" />
         <Contacts/>
       </footer>

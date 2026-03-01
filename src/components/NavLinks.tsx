@@ -1,45 +1,58 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
+const NAV_ITEMS = [
+  { name: 'About Me', href: '#about-me' },
+  { name: 'My Work', href: '#my-work' },
+  { name: 'Contacts', href: '#contacts' },
+];
 
 export default function NavLinks() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
-      
-      <div className="hidden md:flex gap-6">
-        <a href="#about-me" className="hover:text-amber-400 transition-colors">
-          About Me
-        </a>
-        <a href="#my-work" className="hover:text-amber-400 transition-colors">
-          My Work
-        </a>
-        <a href="#contacts" className="hover:text-amber-400 transition-colors">
-          Contacts
-        </a>
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex gap-8">
+        {NAV_ITEMS.map((item) => (
+          <a
+            key={item.name}
+            href={item.href}
+            className="text-sm uppercase tracking-widest font-medium hover:text-amber-500 transition-colors duration-300"
+          >
+            {item.name}
+          </a>
+        ))}
       </div>
 
+      {/* Mobile Toggle */}
+      <button
+        className="md:hidden text-black z-50"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle menu"
+      >
+        {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+      </button>
 
-      
-        <button
-            className="md:hidden text-black"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-        >
-            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-        </button>
-
-
-     
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-neutral-400 shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
-          <Link href="/about-me" onClick={() => setIsOpen(false)} className='text-lg font-semibold text-black'>About Me</Link>
-          <Link href="/my-work" onClick={() => setIsOpen(false)}  className='text-lg font-semibold text-black'>My Work</Link>
-          <Link href="/contacts" onClick={() => setIsOpen(false)} className='text-lg font-semibold text-black'>Contacts</Link>
+        <div className="fixed inset-0 top-0 left-0 w-full h-screen bg-white backdrop-blur-md z-40 flex flex-col items-center justify-center gap-8 md:hidden">
+          {NAV_ITEMS.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              onClick={handleLinkClick}
+              className="text-3xl font-bold tracking-tighter text-black hover:text-amber-500 transition-all"
+            >
+              {item.name}
+            </a>
+          ))}
         </div>
       )}
     </>

@@ -71,6 +71,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 2rem;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

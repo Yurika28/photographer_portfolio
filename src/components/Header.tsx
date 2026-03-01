@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <header className="relative h-[50vh] md:h-screen bg-neutral-50 flex flex-col overflow-hidden">
       {/* Navbar */}
-      <nav className="relative flex w-full justify-between p-4 items-center z-20">
+      <nav className="relative flex w-full justify-between p-4 items-center z-30">
         <Logo />
         <NavLinks />
       </nav>
